@@ -1,0 +1,24 @@
+// 49. Write a C program to convert a given integer (in days) to years, months and days, assuming that all months have 30 days and all years have 365 days. 
+
+#include<stdio.h>
+void main()
+{
+    float num,year,day,month,remain;
+
+printf("Enter the number: ");
+scanf("%f", &num);
+
+year=num/365;
+int intergerpart=(int)year;  //To find the whole digit 
+printf("Years: %d\n", intergerpart);
+
+remain=num-(intergerpart*365);
+
+month=remain/30;
+int wholemonth=(int)month;
+printf("Months: %d\n", wholemonth);
+
+remain=remain-(wholemonth*7);
+printf("Days: %f", remain);  
+    
+}
