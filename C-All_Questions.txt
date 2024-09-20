@@ -892,7 +892,7 @@
 	
 	
 	
-	23. Write a program in C to find the sum of the series [x - x^3 + x^5 + ......]. 
+	23. Write a program in C to find the sum of the series [x - x^3 + x^5 - ......]. 
 		Test Data :
 		Input the value of x :3
 		Input number of terms : 5
@@ -900,7 +900,7 @@
 		The sum is : 16.375000
 	
 	
-	24. Write a program in C to find the sum of the series [ x - x^3 + x^5 + ......]. 
+	24. Write a program in C to find the sum of the series [ x - x^3 + x^5 - ......]. 
 		Test Data :
 		Input the value of x :2
 		Input number of terms : 5

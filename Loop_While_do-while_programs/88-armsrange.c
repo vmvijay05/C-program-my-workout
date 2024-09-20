@@ -1,25 +1,49 @@
 /* 88. Write a C program to find the Armstrong number for a given range of number.
-		Test Data :
-		Input starting number of range: 1
-		Input ending number of range : 1000
-		Expected Output :
-		Armstrong numbers in given range are: 1 153 370 371 407   */
+        Test Data :
+        Input starting number of range: 1
+        Input ending number of range : 1000
+        Expected Output :
+        Armstrong numbers in given range are: 1 153 370 371 407   */
 
-#include<stdio.h>
+#include <stdio.h>
 void main()
 {
-int i,n,mx,mn,sum;
+    int i, k, n, max, min, sum, given, rem, j, mul;
 
-printf("Enter the starting and ending numbers: ");
-scanf("%d \t%d", &mn,&mx);
+    printf("Enter the starting and ending numbers: ");
+    scanf("%d %d", &min, &max);
 
-for(i=mn;i<=mx;i++)
-{
-    sum=i*i*i;
+    for (k = min; k <= max; k++)
+    {
+        sum=0;
+        // To find the count:
+        given = k;
+        i=0;
+        while (given != 0)
+        {
+            given = given / 10;
+            i++;
+        }
+        printf("%d The Digit count is: %d\n", k, i);
 
-if(sum==i)
-{
-    printf("Armstrong numbers in given range are : %d ", i);
-}
-}
+        // To find the number is armstrong or not:
+
+        given = k;
+        while (given!= 0)
+        {
+            rem = given % 10;
+            mul = 1;
+            for (j = 1; j <= i; j++)
+            {
+                mul = mul * rem;
+            }
+            printf("rem is: %d , mul = %d\n", rem, mul);
+            given = given / 10;
+            sum = sum + mul;
+        }
+        printf("Sum=%d\n", sum);
+        
+        if (sum == k)
+            printf("The armstrong numbers are: %d \n", sum);
+    }
 }

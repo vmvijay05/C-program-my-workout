@@ -43,3 +43,12 @@ void main()
     else
         printf("It is not armstrong number.\n");
 }
+
+
+/*Output: 
+Enter the number: 153
+count=27
+count=125
+count=1
+sum = 153
+It is a armstrong number.  */

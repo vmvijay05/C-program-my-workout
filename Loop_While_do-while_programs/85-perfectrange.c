@@ -11,7 +11,7 @@ void main()
     int i, n, r, sum, k, x, y, j;
 
     printf("Enter the number: ");
-    scanf("%d \t %d", &x, &y);
+    scanf("%d %d", &x, &y);
     // k=1;
     for (j = x; j <= y; j++)
     {
@@ -28,7 +28,9 @@ void main()
         {
             printf("%d \n",j);
         }
+        
     }
+        printf("There is no perfect numbers between the given range.\n");
 }
 
 
