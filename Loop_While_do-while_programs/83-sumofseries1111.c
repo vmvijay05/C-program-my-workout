@@ -17,10 +17,14 @@ void main()
     {
         sum = sum + result;
         printf("%d ", result);
+         if (i < n)
+      {
+          printf("+ "); // Print addition sign between terms (except the last term).
+      }
         result = (result * 10) + 1;
     }
 
-    printf("The sum of the series is: %d\n", sum);
+    printf("\nThe sum of the series is: %d\n", sum);
 }
 
 

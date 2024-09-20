@@ -14,7 +14,7 @@
 #include <stdio.h>
 void main()
 {
-    int i, n, j, x, k, sum = 1;
+    int i, n, j, x, k, sum = 1, l, s, m, mul;
 
     printf("Enter the no.of terms: ");
     scanf("%d", &n);
@@ -22,11 +22,13 @@ void main()
     printf("Enter the x value: ");
     scanf("%d", &x);
 
-    printf("%d ", x);
+    // printf("%d ", x);
+    k = 1;
+    l = 1;
 
     for (i = 1; i <= n; i++)
     {
-        k = 3;
+        sum = 1;
         j = 1;
         while (j <= k)
         {
@@ -35,6 +37,30 @@ void main()
             // printf("sum=%d  ", sum);
         }
         k = k + 2;
-        printf("\n%d ", sum);
+        // printf("\n%d ", sum);
+        m = sum;
+        //if (i % 2 == 0)
+            mul = m * l;
+        // else
+        //     mul = m;
+
+        printf("%d \n", mul);
+        s = s + mul;
+        
+        l = l * (-1);
     }
+    printf("\nsum=%d ", s);
 }
+
+
+/* Output:
+
+Enter the no.of terms: 5
+Enter the x value: 2
+2 
+-8 
+32 
+-128 
+512 
+
+sum=410*/
