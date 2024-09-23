@@ -3,7 +3,7 @@
         Input starting number of range: 1
         Input ending number of range : 1000
         Expected Output :
-        Armstrong numbers in given range are: 1 153 370 371 407   */
+        Armstrong numbers in given range are: 1 2 3 4 5 6 7 8 9 153 370 371 407   */
 
 #include <stdio.h>
 void main()
@@ -24,7 +24,7 @@ void main()
             given = given / 10;
             i++;
         }
-        printf("%d The Digit count is: %d\n", k, i);
+       // printf("%d The Digit count is: %d\n", k, i);
 
         // To find the number is armstrong or not:
 
@@ -37,13 +37,32 @@ void main()
             {
                 mul = mul * rem;
             }
-            printf("rem is: %d , mul = %d\n", rem, mul);
+           // printf("rem is: %d , mul = %d\n", rem, mul);
             given = given / 10;
             sum = sum + mul;
         }
-        printf("Sum=%d\n", sum);
+       // printf("Sum=%d\n", sum);
         
         if (sum == k)
             printf("The armstrong numbers are: %d \n", sum);
     }
-}
+}   
+
+
+/* Output: 
+
+Enter the starting and ending numbers: 1
+500
+The armstrong numbers are: 1 
+The armstrong numbers are: 2 
+The armstrong numbers are: 3 
+The armstrong numbers are: 4 
+The armstrong numbers are: 5 
+The armstrong numbers are: 6 
+The armstrong numbers are: 7 
+The armstrong numbers are: 8 
+The armstrong numbers are: 9 
+The armstrong numbers are: 153 
+The armstrong numbers are: 370 
+The armstrong numbers are: 371 
+The armstrong numbers are: 407       */

@@ -999,12 +999,12 @@
 		0 1 1 2 3 5 8 13 21 34 
 	
 	
-	35.(36) Write a C program to display a such a pattern for n rows using a number that starts with 1 and each row will have a 1 as the first and last number. 
-		1
+	35.(36) Write a C program to display a such a pattern for n rows using a number that starts with 1 and each row will have a 1 as the first and last number.
+
+		 1
 		121
-		12321
-		1234321
-	
+	       12321
+	      1234321
 	
 	36.(37) Write a program in C to display the number in reverse order. 
 		Test Data :
@@ -1021,8 +1021,8 @@
 	
 	38.(40) Write a C program to display the pyramid pattern using the alphabet. 
 	
-			  A
-			A B A 
+		      A
+		    A B A 
 		  A B C B A
 		A B C D C B A 
 	
@@ -1168,25 +1168,12 @@
 		16 = 3 + 13
 		16 = 5 + 11
 	
-	
-	57. Write a C program to print a string in reverse order.
-		Test Data :
-		Input a string to reverse : Welcome
-		Expected Output :
-		Reversed string is: emocleW
-	
-	58. Write a C program to find the length of a string without using the library function.
+	57. Write a C program to find the length of a string without using the library function.
 		Test Data :
 		Input a string : welcome
 		Expected Output :
 		The string contains 7 number of characters.
 		So, the length of the string welcome is : 7
-	
-	59. Write a C program to check the Armstrong number of n digits.
-		Test Data :
-		Input an integer : 1634
-		Expected Output :
-		1634 is an Armstrong number
 	
 	
 	Number Conversion Programs using loops:
