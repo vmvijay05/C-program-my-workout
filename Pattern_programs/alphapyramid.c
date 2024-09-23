@@ -22,28 +22,36 @@ void main()
         l = row - i;
         for (m = 1; m <= l; m++)
         {
-            printf(".");
+            printf(" ");
         }
-
-        test = 'A';
 
         for (j = 1; j <= i; j++)
         {
+            // test = 'A';
 
             printf("%c", test);
             test++;
         }
-        test = 'A';
-
+        // test = 'A';
+        --test;
         for (k = i - 1; k >= 1; k--)
         {
-            printf("%c", test);
-            test++;
+            printf("%c", --test);
         }
+
         printf("\n");
+        test = 'A';
     }
 }
-// printf("%c , %d\n", test,test);
-// test++;
-// printf("%c %d",test,test);
-// return 0;
+
+
+/*  Output:
+
+    Enter the no.of rows: 5
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA            */
+
+
