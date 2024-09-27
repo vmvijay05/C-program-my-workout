@@ -41,3 +41,8 @@ void main()
         }
     }
 }
+
+/*Output:
+
+Enter the marks: 76
+Grade C                  */
