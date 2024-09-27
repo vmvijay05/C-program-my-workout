@@ -1161,28 +1161,13 @@
 		Expected Output :
 		The equivalent Hexadecimal Number : 4F
 	
-	56. Write a program in C to check whether a number can be expressed as the sum of two prime.
-		Test Data :
-		Input a positive integer: 16
-		Expected Output :
-		16 = 3 + 13
-		16 = 5 + 11
-	
-	57. Write a C program to find the length of a string without using the library function.
-		Test Data :
-		Input a string : welcome
-		Expected Output :
-		The string contains 7 number of characters.
-		So, the length of the string welcome is : 7
-	
-	
 	Number Conversion Programs using loops:
 	---------------------------------------
 	
 	1.(41) Write a program in C to convert a decimal number into binary without using an array. 
 		Test Data :
 		Input a decimal number: 25
-		Binary number equivalent to said decimal number is: 0000000000000000000000000001 1001
+		Binary number equivalent to said decimal number is: 11001
 	
 	
 	2.(42) Write a C program to convert a binary number into a decimal number without using array, function and while loop. 
@@ -1207,11 +1192,11 @@
 	
 	
 	5.(51) Write a C program to convert an octal number to a decimal without using an array. 
-	Test Data :
+		Test Data :
 		Input an octal number (using digit 0 - 7) :745
 		Expected Output :
 		The Octal Number : 745
-		The equivalent Decimal Number : 485
+		The equivalent Decimal Number : 485	
 	
 	6.(53) Write a C program to convert a binary number to octal. 
 		Test Data :

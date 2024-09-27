@@ -15,7 +15,7 @@ void main()
 
 	printf("Enter the numbers: ");
 	scanf("%d %d", &min, &max);
-		printf("The prime number between %d and %d are: \n", min,max);
+	printf("The prime number between %d and %d are: \n", min, max);
 
 	for (j = min; j <= max; j++)
 	{
@@ -24,21 +24,18 @@ void main()
 		{
 			if (j % i == 0)
 			{
-				//printf("The given number is not a prime number\n");
+				// printf("The given number is not a prime number\n");
 				flag = 0;
 				break;
 			}
 		}
-		if (flag == 1)
+		if (flag == 1 && j!=1)
 			printf("%d ", j);
-			}
+	}
 }
 
-
-/*Output: 
+/*Output:
 Enter the numbers: 1
 50
-The prime number between 1 and 50 are: 
-1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47    */
-
-
+The prime number between 1 and 50 are:
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47    */
