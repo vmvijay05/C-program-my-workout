@@ -1312,7 +1312,7 @@
 		element - 1 : 2
 		element - 2 : 3
 		Expected Output :
-		The merged array in decending order is :
+		The merged array in decending order is :	
 		3 3 2 2 1 1
 		
 	
