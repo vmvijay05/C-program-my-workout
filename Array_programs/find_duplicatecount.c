@@ -10,7 +10,7 @@
 #include <stdio.h>
 void main()
 {
-    int i, n, count, j,k,flag;
+    int i, n, count, j, k, flag;
 
     printf("Enter the size of array: ");
     scanf("%d", &n);
@@ -37,18 +37,18 @@ void main()
             }
             else
             {
-                flag=1;
-                for(k=i-1;k>=0;k--)
+                flag = 1;
+                for (k = i - 1; k >= 0; k--)
                 {
-                    if(arr[i]==arr[k])
+                    if (arr[i] == arr[k])
                     {
-                        flag=flag+1;
-                        i=i+1;
+                        flag = flag + 1;
+                        i = i + 1;
                     }
                 }
-                if(flag==1)
+                if (flag == 1)
                 {
-                    if(arr[i]==arr[j])
+                    if (arr[i] == arr[j])
                     {
                         count++;
                     }
@@ -59,11 +59,10 @@ void main()
     printf("The total no.of duplicate elements found in the array : %d\n", count);
 }
 
-
 /*Output:
 
 Enter the size of array: 6
-Input no.of elements in the array: 
+Input no.of elements in the array:
 Element 0: 5
 Element 1: 4
 Element 2: 5
