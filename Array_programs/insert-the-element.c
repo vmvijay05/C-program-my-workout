@@ -22,8 +22,8 @@ void main()
     printf("Enter the size of the array: ");
     scanf("%d", &n);
 
-    int arr[n];
-    a = 7; // insert value.
+    int arr[n+1];
+    a = 4; // insert value.
 
     printf("Enter the array elements: \n");
     for (i = 0; i < n; i++)
