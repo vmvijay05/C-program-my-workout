@@ -1400,10 +1400,9 @@
 		After Insert the list is :
 		2 5 7 8 9 11
 		--------------------------------
-		Process exited after 39.33 seconds with return value 10
-		Press any key to continue . . .
+
 		
-	14. Write a program in C to insert values in the array (unsorted list). 
+	14. Write a program in C to insert values at desired position from the array (unsorted list). 
 		Test Data :
 		Input the size of array : 4
 		Input 4 elements in the array in ascending order:

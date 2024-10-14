@@ -1,13 +1,15 @@
-/* Write a program in C to sort the elements of the array in descending order. 
+/*      Write a program in C to find the second largest element in an array.
 		Test Data :
-		Input the size of array : 3
-		Input 3 elements in the array :
-		element - 0 : 5
+		Input the size of array : 5
+		Input 5 elements in the array :
+		element - 0 : 2
 		element - 1 : 9
 		element - 2 : 1
+		element - 3 : 4
+		element - 4 : 6
 		Expected Output :
-		Elements of the array in sorted descending order:
-		9 5 1  */
+		The Second largest element in the array is : 6      */
+
 
 #include <stdio.h>
 void main()
@@ -38,21 +40,21 @@ void main()
         }
     }
 
-    printf("The ascending order array is: ");
-    for(i=0;i<n;i++)
-    {
-        printf("%d ",arr[i]);
-    }
+    printf("The Second largest element in the array is : ");
+    printf("%d ",arr[1]);
 }
 
-/* Output:
+
+/*Output:
 
 Enter the size of the array: 6
 The array elements are: 
-Element 0: 3
+Element 0: 4
 Element 1: 8
-Element 2: 2
-Element 3: 1
-Element 4: 4
-Element 5: 4
-The ascending order array is: 8 4 4 3 2 1              */
+Element 2: 3
+Element 3: 5
+Element 4: 0
+Element 5: 1
+The Second largest element in the array is : 5        */
+
+

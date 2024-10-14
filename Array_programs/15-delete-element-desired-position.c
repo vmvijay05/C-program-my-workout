@@ -35,7 +35,7 @@ void main()
         arr[j] = arr[j + 1];
     }
 
-    printf("\nThe final array elements are: ");
+    printf("\nThe new list array elements are: ");
     for (i = 0; i < n - 1; i++)
     {
         printf("%d ", arr[i]);
@@ -53,4 +53,4 @@ Element 2: 6
 Element 3: 8
 Element 4: 10
 
-The final array elements are: 2 4 6 8          */
+The new list array elements are: 2 4 6 8          */

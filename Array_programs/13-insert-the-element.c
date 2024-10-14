@@ -22,8 +22,10 @@ void main()
     printf("Enter the size of the array: ");
     scanf("%d", &n);
 
-    int arr[n+1];
-    a = 4; // insert value.
+    int arr[n + 1];
+
+    printf("Enter the input value to be inserted: "); // insert value.
+    scanf("%d", &a);
 
     printf("Enter the array elements: \n");
     for (i = 0; i < n; i++)
@@ -49,21 +51,20 @@ void main()
     }
     arr[b] = a;
 
-    printf("\nThe final array elements are: ");
+    printf("\nThe new list array elements are: ");
     for (i = 0; i <= n; i++)
     {
         printf("%d ", arr[i]);
     }
 }
 
-
 /* Output:
 Enter the size of the array: 5
-Enter the array elements: 
+Enter the array elements:
 Element 0: 2
 Element 1: 5
 Element 2: 6
 Element 3: 8
 Element 4: 9
 
-The final array elements are: 2 5 6 7 8 9            */
+The new list array elements are: 2 5 6 7 8 9            */

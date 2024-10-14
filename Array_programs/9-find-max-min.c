@@ -9,7 +9,7 @@
 		Maximum element is : 45
 		Minimum element is : 21             */
 
-#include <stdio.h>
+#include <stdio.h>  
 void main()
 {
     int n, a, i, j, k;
