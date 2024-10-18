@@ -1594,7 +1594,6 @@
 		1 2
 		3 4
 		Addition of the right Diagonal elements is :5
-		Elements in array are:
 		
 	
 	24. Write a program in C to find the sum of the left diagonals of a matrix.
