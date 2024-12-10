@@ -1,12 +1,8 @@
-/* Write a program in C to count the total number of duplicate elements in an array.
-        Test Data :
-        Input the number of elements to be stored in the array :3
-        Input 3 elements in the array :
-        element - 0 : 5
-        element - 1 : 1
-        element - 2 : 1
+/*44. Write a program in C to find the two repeating elements in a given array.
         Expected Output :
-        Total number of duplicate elements found in the array is : 1       */
+        The given array is : 2 7 4 7 8 3 4
+        The repeating elements are: 7 4   */
+
 #include <stdio.h>
 void main()
 {
@@ -22,6 +18,7 @@ void main()
         scanf("%d", &arr[i]);
     }
     count = 0;
+    printf("The repeating elements are: ");
     for (i = 0; i < n; i++)
     {
         for (j = i + 1; j < n; j++)
@@ -31,7 +28,7 @@ void main()
 
                 if (arr[i] == arr[j])
                 {
-                    count++;
+                    printf("%d ", arr[i]);
                 }
             }
             else
@@ -48,23 +45,25 @@ void main()
                 {
                     if (arr[i] == arr[j])
                     {
-                        count++;
+                        // count++;
+                        printf("%d ", arr[i]);
                     }
                 }
             }
         }
     }
-    printf("The total no.of duplicate elements found in the array : %d\n", count);
 }
 
 /*Output:
 
-Enter the size of array: 6
+Enter the size of array: 8
 Input no.of elements in the array:
-Element 0: 5
-Element 1: 4
-Element 2: 5
+Element 0: 0
+Element 1: 2
+Element 2: 0
 Element 3: 3
 Element 4: 5
-Element 5: 3
-The total no.of duplicate elements found in the array : 3           */
+Element 5: 6
+Element 6: 3
+Element 7: 6
+The repeating elements are: 0 3 6               */

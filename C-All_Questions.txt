@@ -1789,9 +1789,8 @@
 		Expected Output :
 		The given array is : 8 3 8 -5 4 3 -4 3 5
 		The largest sum of contiguous subarray is : 21
-		Click me to see the solution
 		
-		36. Write a program in C to find the missing number in a given array. There are no duplicates in the list.
+	36. Write a program in C to find the missing number in a given array. There are no duplicates in the list.
 		Expected Output :
 		The given array is : 1 3 4 2 5 6 9 8
 		The missing number is : 7
@@ -1825,15 +1824,15 @@
 		
 	
 	40. Write a program in C to find the ceiling in a sorted array.
-		N.B.: Given a sorted array in ascending order and a value x, the ceiling of x is the smallest element in array greater than or equal to x, and the floor is the 	greatest element smaller than or equal to x.
+		N.B.: Given a sorted array in ascending order and a value x, the ceiling of x is the smallest element in array greater than or equal to x, and the floor is the greatest element smaller than or equal to x.
 		Expected Output :
 		The given array is : 1 3 4 7 8 9 9 10
 		The ceiling of 5 is: 7
 		
 		
-	41. Write a program in C to find the Floor and Ceiling of the number 0 to 10 from a sroted array.
+	41. Write a program in C to find the Floor and Ceiling of the number 0 to 10 from a sorted array.
 		Expected Output :
-		The given array is : 1 3 5 7 8 9
+		The given array is : 1 3 5 7 8 9	
 		Number: 0 ceiling is: 1 floor is: -1
 		Number: 1 ceiling is: 1 floor is: 1
 		Number: 2 ceiling is: 3 floor is: 1
@@ -1853,7 +1852,7 @@
 		The missing smallest element is: 2
 		
 		
-	43. Write a program in C to print the next greatest elements in a given unsorted array. Elements for which no superior element exists, consider the next greatest 	    element as -1.
+	43. Write a program in C to print the next greatest elements in a given unsorted array. Elements for which no superior element exists, consider the next greatest element as -1.
 		Expected Output :
 		The given array is : 5 3 10 9 6 13
 		Next Bigger Elements are:
@@ -1864,7 +1863,7 @@
 		Next bigger element of 6 in the array is: 13
 		Next bigger element of 13 in the array is: -1
 		Next Bigger Elements Array:
-		10 10 13 13 13 -1
+		10 10 13 13 13 -1  
 		
 	
 	44. Write a program in C to find the two repeating elements in a given array.
@@ -1887,6 +1886,7 @@
 	
 	47. Write a program in C to find a subarray with a given sum from the given array.
 		Expected Output :
+		The sum value : 7
 		The given array is : 3 4 -7 1 3 3 1 -4
 		[0..1] -- { 3 4 }
 		[0..5] -- { 3 4 -7 1 3 3 }

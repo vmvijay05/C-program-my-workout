@@ -1,29 +1,36 @@
-/* Write a program in C to count the total number of duplicate elements in an array.
-        Test Data :
-        Input the number of elements to be stored in the array :3
-        Input 3 elements in the array :
-        element - 0 : 5
-        element - 1 : 1
-        element - 2 : 1
+/*34. Write a program in C to find the number occurring odd number of times in an array.
+        All numbers occur even number of times except one number which occurs odd number of times.
         Expected Output :
-        Total number of duplicate elements found in the array is : 1       */
+        The given array is : 8 3 8 5 4 3 4 3 5
+        The element odd number of times is : 3            */
+
 #include <stdio.h>
 void main()
 {
-    int i, n, count, j, k, flag;
+    int i, j, k, n, flag, count;
 
-    printf("Enter the size of array: ");
+    printf("Enter the size of array:");
     scanf("%d", &n);
+
     int arr[n];
-    printf("Input no.of elements in the array: \n");
+
+    printf("Enter the  array elements: \n");
     for (i = 0; i < n; i++)
     {
         printf("Element %d: ", i);
         scanf("%d", &arr[i]);
     }
-    count = 0;
+
+    printf("The elements in array are: ");
+
     for (i = 0; i < n; i++)
     {
+        printf("%d ", arr[i]);
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        count = 1;
         for (j = i + 1; j < n; j++)
         {
             if (i == 0)
@@ -53,18 +60,11 @@ void main()
                 }
             }
         }
+        // printf("\ncount=%d",count);
+       
     }
-    printf("The total no.of duplicate elements found in the array : %d\n", count);
+     if (count % 2 != 0)
+        {
+            printf("\nThe element odd number of times is : %d\n", arr[i]);
+        }
 }
-
-/*Output:
-
-Enter the size of array: 6
-Input no.of elements in the array:
-Element 0: 5
-Element 1: 4
-Element 2: 5
-Element 3: 3
-Element 4: 5
-Element 5: 3
-The total no.of duplicate elements found in the array : 3           */
