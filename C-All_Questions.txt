@@ -2163,7 +2163,8 @@
 		
 		Expected Output :
 		
-		The characters of the string are : 
+		The characters of the string are : w  3  r  e  s  o  u  r  c  e  .  c  o  m 
+
 	
 	4. Write a program in C to print individual characters of a string in reverse order.
 	
@@ -2173,7 +2174,7 @@
 		Expected Output :
 		
 		The characters of the string in reverse are :
-		m  o  c  .  e  c  r  u  o  s  e  r  3  w 
+		m  o  c  .  e  c  r  u  o  s  e  r  3  w
 	
 	5. Write a program in C to count the total number of words in a string.
 	
