@@ -1,4 +1,5 @@
 //Without Argument With Return
+//Find Average:
 
 #include<stdio.h>
 	float avg();
@@ -12,7 +13,12 @@
 	}
 	float avg()
 	{
-		float a=86, b=99, c=66,average;
+		float a=12, b=15, c=18,average;
 		average =(a+b+c) / 3;
 		return average;
 	}
+
+	/*Output:
+	before function calling
+ average value is 15.000000
+ after function calling              */
