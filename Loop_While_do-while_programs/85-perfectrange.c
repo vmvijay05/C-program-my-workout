@@ -8,7 +8,7 @@
 #include <stdio.h>
 void main()
 {
-    int i, n, r, sum, k, x, y, j;
+    int i, n, r, sum, k, x, y, j,flag=0;
 
     printf("Enter the number: ");
     scanf("%d %d", &x, &y);
@@ -27,10 +27,14 @@ void main()
         if(sum==j)
         {
             printf("%d \n",j);
+            flag++;
         }
         
     }
+    if(flag==0)
+    {
         printf("There is no perfect numbers between the given range.\n");
+    }
 }
 
 

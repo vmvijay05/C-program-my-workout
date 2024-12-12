@@ -30,7 +30,7 @@ void main()
         {
             n3 = n3 * n2;
         }
-        printf("count=%d\n", n3);
+        //  printf("count=%d\n", n3);
         n = n / 10;
         sum = sum + n3;
         // i++;
@@ -44,8 +44,7 @@ void main()
         printf("It is not armstrong number.\n");
 }
 
-
-/*Output: 
+/*Output:
 Enter the number: 153
 count=27
 count=125
