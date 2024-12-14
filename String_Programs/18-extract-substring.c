@@ -33,7 +33,7 @@ void main()
             copystring[i] = str[k];
             k++;
         }
-        copystring[i]='\0';
+        copystring[i]='\0'; //add null value for last index.
     }
     
     printf("The copied string is: %s\n", copystring);
