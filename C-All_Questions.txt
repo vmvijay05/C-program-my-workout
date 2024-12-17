@@ -2446,7 +2446,7 @@
 		
 		Expected Output:
 		
-		Input a string: Length of the longest substring without repeating characters: 4
+		Input a string: Length of the longest substring without repeating characters: 4.
 
 
 	36. A given string contains the bracket characters '(', ')', '{', '}', '<', ‘>', '[' and ']', 
