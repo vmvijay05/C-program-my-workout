@@ -2493,7 +2493,7 @@
 		Input the second String : pears
 		Expecte	d Output :
 		
-		spare and pears are Anagram.  
+		spare and pears are Anagram. 
 	
 	
 -------------------------------------------------------------------------------------------------------------------------------------------------

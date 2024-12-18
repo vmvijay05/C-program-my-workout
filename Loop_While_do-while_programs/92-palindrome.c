@@ -3,14 +3,13 @@
 #include<stdio.h>
 void main()
 {
-
     int num,given,i,k,m,j;
 
     printf("Input a number: ");
     scanf("%d", &num);
 
 given=num;
-    while(given!=0)
+    while(given!=0) 
     {
         i=given%10;
         k=(k*10)+i;
