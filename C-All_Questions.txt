@@ -2699,9 +2699,7 @@
 		element - 3 : 89
 		element - 4 : 15
 		element - 5 : 82
-		Expected Output :
-		
-																								
+		Expected Output :																
 		The elements in the array after sorting :                                                                    
 		element - 1 : 15                                                                                             
 		element - 2 : 25                                                                                             
