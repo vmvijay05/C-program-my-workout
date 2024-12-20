@@ -43,6 +43,4 @@ Element 1: 8
 Element 2: 7
 The values store into the array are: 
 9 8 7 
-The sum of array elements are: 24
-
-                       */
+The sum of array elements are: 24    */

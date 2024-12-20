@@ -5,7 +5,32 @@
 		Expected Output :
 		The number 6 is larger. */
 
+#include <stdio.h>
+int *findMax(int *num1, int *num2)
+{
+	if (*num1 > *num2)
+	{
+		return num1;
+	}
+	else
+	{
+		return num2;
+	}
+}
 
+void main()
+{
+	int a, b;
+	printf("Enter two integers:\n");
+	scanf("%d %d", &a, &b);
 
+	int *max = findMax(&a, &b);
+	printf("The greater number is %d\n", *max);
+}
 
-
+/*Output:
+Enter two integers:
+53
+64
+The greater number is 64
+*/

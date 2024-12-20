@@ -2715,8 +2715,6 @@
 		
 		The number 6 is larger.       
 		
-		Click me to see the solution
-	
 	
 	16. Write a program in C to compute the sum of all elements in an array using pointers.
 		Test Data :
@@ -2764,6 +2762,7 @@
 		Test Data :
 		Input a string : w3resource
 		Expected Output :
+		ecruoser3w
 	
 -----------------------------------------------------------------------------------------------------
 	
