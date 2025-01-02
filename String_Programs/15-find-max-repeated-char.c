@@ -4,7 +4,6 @@
         Input the string : Welcome to w3resource.com.
 
         Expected Output :
-
         The Highest frequency of character 'e'
         appears number of times : 4    */
 
@@ -13,7 +12,7 @@
 void main()
 {
     char str[100], result;
-    int i, length, max = -1, freq[256] = {0};
+    int i, length, max = -1, freq[256] = {0};  //{0} -> means all index value set to zero.
 
     printf("Enter the String :  ");
     fgets(str, sizeof(str), stdin);
@@ -35,3 +34,5 @@ void main()
     }
     printf("\n The highest frequency of Character in a Given String = %c ", result);
 }
+
+
