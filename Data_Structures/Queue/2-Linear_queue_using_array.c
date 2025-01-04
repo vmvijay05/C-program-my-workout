@@ -4,40 +4,51 @@
 #define MAX 5 // Maximum size of the queue
 
 // Structure to represent a queue
-struct Queue {
+struct Queue
+{
     int arr[MAX];
     int front;
     int rear;
 };
 
 // Function to initialize the queue
-void initializeQueue(struct Queue* q) {
+void initializeQueue(struct Queue *q)
+{
     q->front = -1;
     q->rear = -1;
 }
 
 // Function to check if the queue is full
-int isFull(struct Queue* q) {
-    if (q->rear == MAX - 1) {
+int isFull(struct Queue *q)
+{
+    if (q->rear == MAX - 1)
+    {
         return 1; // Queue is full
     }
     return 0;
 }
 
 // Function to check if the queue is empty
-int isEmpty(struct Queue* q) {
-    if (q->front == -1 || q->front > q->rear) {
+int isEmpty(struct Queue *q)
+{
+    if (q->front == -1 || q->front > q->rear)
+    {
         return 1; // Queue is empty
     }
     return 0;
 }
 
 // Function to enqueue an element (insert)
-void enqueue(struct Queue* q, int value) {
-    if (isFull(q)) {
+void enqueue(struct Queue *q, int value)
+{
+    if (isFull(q))
+    {
         printf("Queue is full! Cannot enqueue %d.\n", value);
-    } else {
-        if (q->front == -1) {
+    }
+    else
+    {
+        if (q->front == -1)
+        {
             q->front = 0; // Set front to 0 when the first element is added
         }
         q->rear++;
@@ -47,12 +58,16 @@ void enqueue(struct Queue* q, int value) {
 }
 
 // Function to dequeue an element (remove)
-int dequeue(struct Queue* q) {
+int dequeue(struct Queue *q)
+{
     int value;
-    if (isEmpty(q)) {
+    if (isEmpty(q))
+    {
         printf("Queue is empty! Cannot dequeue.\n");
         return -1; // Queue is empty
-    } else {
+    }
+    else
+    {
         value = q->arr[q->front];
         q->front++;
         return value;
@@ -60,26 +75,33 @@ int dequeue(struct Queue* q) {
 }
 
 // Function to display the queue
-void display(struct Queue* q) {
-    if (isEmpty(q)) {
+void display(struct Queue *q)
+{
+    if (isEmpty(q))
+    {
         printf("Queue is empty!\n");
-    } else {
+    }
+    else
+    {
         printf("Queue elements: ");
-        for (int i = q->front; i <= q->rear; i++) {
+        for (int i = q->front; i <= q->rear; i++)
+        {
             printf("%d ", q->arr[i]);
         }
         printf("\n");
     }
 }
 
-int main() {
+int main()
+{
     struct Queue q;
     initializeQueue(&q);
 
     int choice, value;
 
     // Menu-driven program to interact with the queue
-    do {
+    do
+    {
         printf("\nQueue Operations Menu:\n");
         printf("1. Enqueue\n");
         printf("2. Dequeue\n");
@@ -88,26 +110,28 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        switch (choice) {
-            case 1:
-                printf("Enter value to enqueue: ");
-                scanf("%d", &value);
-                enqueue(&q, value);
-                break;
-            case 2:
-                value = dequeue(&q);
-                if (value != -1) {
-                    printf("Dequeued %d\n", value);
-                }
-                break;
-            case 3:
-                display(&q);
-                break;
-            case 4:
-                printf("Exiting program.\n");
-                break;
-            default:
-                printf("Invalid choice! Please try again.\n");
+        switch (choice)
+        {
+        case 1:
+            printf("Enter value to enqueue: ");
+            scanf("%d", &value);
+            enqueue(&q, value);
+            break;
+        case 2:
+            value = dequeue(&q);
+            if (value != -1)
+            {
+                printf("Dequeued %d\n", value);
+            }
+            break;
+        case 3:
+            display(&q);
+            break;
+        case 4:
+            printf("Exiting program.\n");
+            break;
+        default:
+            printf("Invalid choice! Please try again.\n");
         }
     } while (choice != 4);
 
