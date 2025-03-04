@@ -13,6 +13,7 @@ int main()
     int length = 0;
     printf("Enter a string: ");
     gets(str);
+    
     ptr = str;
 
 //printf("pointer value=%uand%d\n",ptr,*ptr);
